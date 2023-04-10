@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url("background.jpg");
+    background-size: cover;
+  }
+  
+
+  /* Introduction Text */
+
+  .introduction {
+    width: 900px;
+    height: 254px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(69, 59, 8, 0.605);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(69, 59, 8, 0.605);
+  }
+
+  .introduction:hover {
+    box-shadow: -12px 12px 2px -1px rgba(69, 59, 8, 0.605);
+   }
+  
+  /* Container for flexboxes */
+    .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 180px;
+    margin-left: 180px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  /* Create three equal columns */
+
+    .column1 {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Women in Basket Description */
+
+    .women-in-basket {
+    width: 900px;
+    height: 320px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(69, 59, 8, 0.605);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(69, 59, 8, 0.605);
+    }
+    
+    .women-in-basket:hover {
+    box-shadow: -12px 12px 2px -1px rgba(69, 59, 8, 0.605);
+    }  
+
+    .video {
+        padding-top: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+  /* On screens that are 992px wide or less, the three images will remain in their rows and columns */
+  @media screen and (max-width: 992px) {
+    .column1 {
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 70px;
+        margin-left: 70px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+      }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column1 {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .row1 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-right: 70px;
+          margin-left: 70px;
+          padding-bottom: 50px;
+          padding-top: 30px;
+        }
+  }
+  
+  /* Footer Design */
+
+  footer {
+	text-align: center;
+    margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #381b07;
+	color: #fff;
+   }
+   
